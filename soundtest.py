@@ -1,3 +1,7 @@
+"""
+Created and tested by Erwin - PA3EFR
+"""
+
 import sounddevice as sd
 import numpy as np
 
