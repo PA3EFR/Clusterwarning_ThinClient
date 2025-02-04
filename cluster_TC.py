@@ -72,7 +72,7 @@ def main():
         try:
             while True:
                 # Ontvang data van de socket
-                data = s.recv(1024).decode("utf-8")
+                data = s.recv(1024).decode("utf-8", errors="replace")
                 data = data.upper()
                 if not data:
                     break  # Verbinding is gesloten door de server
